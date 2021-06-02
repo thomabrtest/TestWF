@@ -13,7 +13,7 @@ jobs:
   # This workflow contains a single job called "build"
   longrun:
     # The type of runner that the job will run on
-    runs-on: ubunut-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -24,4 +24,4 @@ jobs:
     - name: Run a multi-line script
       run: |
         ping google.com -c 60 -i 1  
-        echo test, and deploy your project.
+        sleep 50
